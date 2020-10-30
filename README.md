@@ -5,6 +5,8 @@ The script attached allows expressions submitted from competitors for WGYN B/C, 
 
 Requires Google Forms (2 per division) and Google Sheets
 
+![Sample Results](/images/WGYN_Example.PNG)
+
 ## Setup
 It is ideal to have two Google Forms per division: one for the start time with the preliminary information and a second to display their answers and an end time. It is important for competitiors to re-enter their information on the second Google Form as well because there is a chance that one team would submit earlier than another, causing the rows to be shifted.
 
