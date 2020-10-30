@@ -13,11 +13,13 @@ You would want three Google Sheets: two for the Google Forms and one to perform 
 ## Conditional Formatting and Additional Formulas
 Conditional formatting needs to be set up so that the calculating the score would work. There is a rule for each of the three colors, which are green, yellow, and red. You would apply it to the whole range.
 
-Green = `=AND(H2<>"", H2<>0)` Yellow = `Cell is empty` Red = `=H2<>H$1`
+Green = `=AND(H2<>"", H2<>0)` Yellow = `Cell is empty` Red = `=H2<>H$1` where `H2` is the first team's answers and the start of the range and `H1` is where the number 1 would be.
 
 Note that the red has absolute reference to the row since the top row would be the number the expression would want to result to and `<>` simply means not equal.
 
-You would also use `RANK` function to order the scores and determine placements. `MINUS` is also helpful in subtracting the form timers to see how long competitors took to submit their answers after they see it.
+You would also use `RANK` function to order the scores and determine placements. `MINUS` is also helpful in subtracting the form timers to see how long competitors took to submit their answers after they see it. You could format the times to display red if they go over a certain time limit.
+
+What you would put into a cell if you want to determine the result would be `=solveFunction('C Answers'!E2, $F$1, H$1, "C")` where `E2` would be where the result is, `$F$1` is the set of numbers (from least to greatest) that they are using, `H$1` is the expected result, and `"C"` is the division. You can extend the range over the first set, but make sure to change `$F$1` when you get to the second set of numbers, wherever they may be located.
 
 ## Known Issues
 - Since each cell is actually calling on the function, it results in a lot of lag if a bunch of results are called at the same time, having the potential to error out. It is best to have a duplicate sheet where it simply has the values and colors so that the results will not get lost. If you attempt to hard refresh the function, you would need a dummy parameter in order to do so, since Apps Script tends to cache the previous result in order to save time. In a similar vein, the total score will also display incorrectly until you force it to rerun, hence the dummy parameter in there.
