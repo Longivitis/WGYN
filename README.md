@@ -17,7 +17,7 @@ Conditional formatting needs to be set up so that the calculating the score woul
 
 Green = `=AND(H2<>"", H2<>0)` Yellow = `Cell is empty` Red = `=H2<>H$1` where `H2` is the first team's answers and the start of the range and `H1` is where the number 1 would be.
 
-Note that the red has absolute reference to the row since the top row would be the number the expression would want to result to and `<>` simply means not equal.
+Note that the red has absolute reference to the row since the top row would be the number the expression would want to result to and `<>` simply means equal.
 
 You would also use `RANK` function to order the scores and determine placements. `MINUS` is also helpful in subtracting the form timers to see how long competitors took to submit their answers after they see it. You could format the times to display red if they go over a certain time limit.
 
