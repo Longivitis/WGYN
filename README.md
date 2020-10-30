@@ -1,7 +1,7 @@
 # WGYN Calculator
 Author: Martin Nguyen
 
-The script attached allows expressions submitted from competitors for WGYN B/C, which is a Science Olympiad Texas Trial Event, to be evaluated and automatically be determined if it is correct or incorrect. Useful for virtual tournaments, since competitors would be submtitting their answers electronically. Utilizes these [rules](https://drive.google.com/file/d/1UU-ypL8M4c8PEAAUXN0pAn0JBMH8gWpo/view) and formatting listed here.
+The script attached allows expressions submitted from competitors for WGYN B/C, which is a Science Olympiad Texas Trial Event, to be evaluated and automatically be determined if it is correct or incorrect. Useful for virtual tournaments, since competitors would be submtitting their answers electronically. Utilizes these [rules](https://drive.google.com/file/d/1UU-ypL8M4c8PEAAUXN0pAn0JBMH8gWpo/view) and formatting listed there.
 
 Requires Google Forms (2 per division) and Google Sheets
 
